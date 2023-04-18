@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./imgs/img_1.avif');
+    background-size: cover;
+    background-position: center center;
+    filter: blur(10px);
+    
+}
+
+.loading-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    font-size: 100px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}

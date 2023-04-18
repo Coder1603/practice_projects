@@ -1,0 +1,132 @@
+:root {
+    --main-color: #927DFCed;
+}
+
+* {
+    /* box-sizing: border-box; */
+    padding: 0;
+    margin: 0;
+}
+
+.box-main {
+    width: 100%;
+}
+
+#container-main {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: var(--main-color);
+    display: flex;
+}
+
+.box-white {
+    width: 450px;
+    height: auto;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 8px;
+    display: flex;
+}
+
+.box-main {
+    margin: 30px;
+}
+
+.box-image {
+    width: calc(450px - 60px);
+    height: calc(290px - 60px);
+    margin: auto;
+    border-radius: 5px;
+    border: 2px rgb(181, 181, 181) dashed;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.box-image img {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    padding-bottom: 16px;
+    margin: 0 auto;
+}
+
+.box-image.active{
+    width: 390px;
+    height: 224px;
+    display: flex;
+    margin: auto;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.box-image.active img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    padding-bottom: 0;
+}
+
+.box-image.active .text-upload {
+    display: none;
+}
+
+.input-feature {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.style-input {
+    width: 176px;
+    height: 48px;
+    border: 1px solid rgb(171, 171, 171);
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+    padding-left: 12px;
+    margin: 6px 0;
+}
+
+.style-input:focus {
+    border: 2px solid var(--main-color);
+}
+
+.feature {
+    margin: 20px 0;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 8px; */
+}
+
+.feature input {
+    margin-right: 6px;
+    width: 16px;
+    height: 16px;
+    accent-color: var(--main-color);
+}
+
+.btn-download {
+    background-color: var(--main-color);
+    border: none;
+    padding: 16px 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 500;
+    margin: 20px 0;
+    cursor: pointer;
+}

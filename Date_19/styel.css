@@ -1,0 +1,115 @@
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
+body.dark-mode {
+  --primary-color: #fff;
+  --secondary-color: #000;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--secondary-color);
+  transition: ease-in 0.5s;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+}
+
+#mode-btn {
+  outline: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: none;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  margin-bottom: 60px;
+}
+
+.clock {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.needle {
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 1.5px);
+  transform-origin: top;
+  transition: 1s linear;
+}
+
+.hour {
+  width: 3px;
+  height: 80px;
+  background-color: var(--primary-color);
+}
+
+.minute {
+  width: 3px;
+  height: 95px;
+  background-color: var(--primary-color);
+}
+
+.second {
+  width: 3px;
+  height: 100px;
+  background-color: #e74c3c;
+}
+
+.center-point {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #e74c3c;
+  position: absolute;
+  top: calc(50% - 5px);
+  left: calc(50% - 5px);
+  z-index: 1;
+}
+
+.center-point::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--primary-color);
+}
+
+.number {
+  font-size: 60px;
+  margin-top: 40px;
+  color: var(--primary-color);
+}
+
+.date {
+  margin-top: 10px;
+  color: #ababab;
+  text-transform: uppercase;
+}
+
+.circle {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 18px;
+  transition: all 0.5s ease-in;
+  font-size: 12px;
+}

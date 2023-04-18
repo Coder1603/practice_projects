@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Resize and Compress Images</title>
+</head>
+
+<body>
+    <div id="container-main">
+        <div class="box-white">
+
+            <div class="box-main">
+                <!-- <div class="block-img">
+                    <input type="file" accept="image/*" hidden>
+                    <img src="" alt="">
+                </div> -->
+                <div class="box-image">
+                    <input type="file" accept="image/*" hidden>
+                    <img src="./IMGS/upload-icon.svg" alt="">
+                    <div class="text-upload">
+                        Browse File To Upload
+                    </div>
+                </div>
+                <div class="input-feature">
+
+                    <div class="container-width-lock ">
+                        <div class="container-width">
+                            <div class="text">Width</div>
+                            <input type="number" class="width style-input">
+                        </div>
+                        <div class="lock-aspect-ratio feature">
+                            <input type="checkbox" id="input-lock" class="">
+                            <label for="input-lock" class="text">Lock Aspect Ratio</label>
+                        </div>
+                    </div>
+
+                    <div class="container-height-reduce">
+                        <div class="container-height">
+                            <div class="text">Height</div>
+                            <input type="number" class="height style-input">
+                        </div>
+                        <div class="reduce-quality feature">
+                            <input type="checkbox" id="input-reduce" class="">
+                            <label for="input-reduce" class="text">Reduce Quality</label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="btn-download"> DOWNLOAD IMAGE</button>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+<script src="./customs.js"></script>
+
+</html>

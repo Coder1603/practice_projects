@@ -1,0 +1,97 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #333;
+    margin: 0;
+}
+
+
+
+.container-main {
+    padding: 50px;
+    background-color: #fff;
+    transition: transform 0.5s linear;
+    
+    transform-origin: top left;
+}
+
+.container-main.active {
+    transform: rotate(-20deg);
+}
+
+.container-content {
+    max-width: 1000px;
+    margin: 50px auto;
+    color: #222;
+}
+
+.container-content h1 {
+    margin: 0;
+}
+
+.container-content span {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.container-content p {
+    line-height: 28px;
+}
+
+.container-content img {
+    width: 100%;
+}
+
+.menu {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+    
+
+}
+
+.circle {
+    cursor: pointer;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    top: 60%;
+    left: 60%;
+    background-color: #ff7979;
+    border: 0;
+    font-size: 26px;
+    color: #fff;
+    transition: transform 0.5s linear;
+    transform-origin: center;
+
+}
+
+.container-main.active .circle {
+    transform: rotate(-80deg);
+}
+
+.circle i {
+    cursor: pointer;
+    position: absolute;
+    top: 65%;
+    left: 65%;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    color: #fff;
+}
+
+.circle .fa-solid.fa-xmark {
+    transform: rotate(90deg);
+    transform-origin: top left;
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+}
